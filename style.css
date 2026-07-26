@@ -541,7 +541,7 @@ button:hover{
     position:absolute;
     inset:0;
     background:url("assets/bg1.webp") center center/cover no-repeat;
-    filter:blur(40px);
+    filter:blur(60px);
 }
 
 /* .age-bg{
