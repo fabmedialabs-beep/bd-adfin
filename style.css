@@ -540,8 +540,8 @@ button:hover{
 .age-bg{
     position:absolute;
     inset:0;
-    background:url("assets/bg1.webp") center center/cover no-repeat;
-    filter:blur(60px);
+    background:url("assets/2.0.webp") center center/cover no-repeat;
+    /* filter:blur(40px); */
 }
 
 /* .age-bg{
@@ -557,7 +557,7 @@ button:hover{
     content:"";
     position:absolute;
     inset:0;
-    background:rgba(0,0,0,.55);
+    /* background:rgba(0,0,0,.55); */
 }
 
 /* Popup */
@@ -1257,6 +1257,113 @@ button:hover{
     100%{
         transform:translateX(0);
         opacity:1;
+    }
+
+}
+
+.offer-floating-btn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index:9999;
+
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    padding:14px 18px;
+
+    background:linear-gradient(135deg,#ff3d3d,#ff7a18);
+    color:#fff;
+
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+    animation:floating 3s ease-in-out infinite;
+
+    cursor:pointer;
+    user-select:none;
+}
+
+.offer-floating-btn:hover{
+    transform:scale(1.05);
+    transition:.3s;
+}
+
+.offer-text{
+    display:flex;
+    flex-direction:column;
+    line-height:1.2;
+}
+
+.offer-text span{
+    font-size:15px;
+    font-weight:700;
+}
+
+.offer-text small{
+    font-size:12px;
+    opacity:.9;
+}
+
+.down-arrow{
+    width:44px;
+    height:44px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#fff;
+    color:#ff4b2b;
+
+    border-radius:50%;
+
+    font-size:26px;
+    font-weight:bold;
+
+    animation:bounce 1.2s infinite;
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(8px);
+    }
+}
+
+@keyframes floating{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-8px);
+    }
+}
+
+@media(max-width:768px){
+
+    .offer-floating-btn{
+        right:15px;
+        bottom:15px;
+        padding:12px 15px;
+        gap:10px;
+    }
+
+    .offer-text span{
+        font-size:13px;
+    }
+
+    .offer-text small{
+        font-size:11px;
+    }
+
+    .down-arrow{
+        width:38px;
+        height:38px;
+        font-size:22px;
     }
 
 }
