@@ -540,7 +540,7 @@ button:hover{
 .age-bg{
     position:absolute;
     inset:0;
-    background:url("assets/1.6.webp") center center/cover no-repeat;
+    background:url("assets/1.2.webp") center center/cover no-repeat;
     /* filter:blur(40px); */
 }
 
